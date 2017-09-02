@@ -640,7 +640,7 @@ ul#lightGallery {
     text-align: center;
     top: -100%;
     right: 0;
-    background-color: rgba(252, 99, 107, 0.75);
+    background-color:orange;
 	 -o-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
@@ -3036,3 +3036,48 @@ input, button, select, textarea {
 .pad-left-20 {
  padding-left: 20px;
 }
+
+
+/*dropdown*/
+
+.dropdown-menu .sub-menu {
+  left: 100%;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  margin-top: -1px;
+}
+
+.dropdown-menu li:hover .sub-menu {
+  visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  left:11%;
+}
+
+.dropdown-menu {
+  margin-top: 0;
+  padding: 0px !important;
+}
+
+.dropdown-menu li {
+    display: block !important;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.dropdown-menu li a{
+    color: #000 !important; 
+    margin: 0px !important;
+    padding: 10px !important;
+    font-size: 0.85em !important;
+}
+
+.dropdown-menu li a :hover{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
