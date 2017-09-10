@@ -1,11 +1,3 @@
-/*--
-	Author: W3Layouts
-	Author URL: http://w3layouts.com
-	License: Creative Commons Attribution 3.0 Unported
-	License URL: http://creativecommons.org/licenses/by/3.0/
---*/
-/*-- Reset-Code --*/
-
 body {
 	padding: 0;
 	margin: 0;
@@ -27,7 +19,7 @@ body a:hover {
 body a:focus, a:hover {
 	text-decoration: none;
 }
-input[type="button"], input[type="submit"] {
+input[type="button"], .btn_submit{
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
 	-moz-transition: 0.5s all;
@@ -181,7 +173,7 @@ span {
 	height:100%;
 }
 /*-- banner --*/
-input[type="submit"],.w3agile_contact_right_agileinfo p a,.w3_copy_right p a{
+input[type="submit"],.btn_submit,.w3agile_contact_right_agileinfo p a,.w3_copy_right p a{
 	transition:.5s ease-in-out;
 	-webkit-transition:.5s ease-in-out;
 	-moz-transition:.5s ease-in-out;
@@ -630,7 +622,7 @@ ul#lightGallery {
     width: 30%;
     margin: 1em auto 0;
     border: double 4px Orange;
-    border: double 4px #00a99d;
+    border: double 4px orange;
 }
 .wthree-services-captn {
 	height: 100%;
@@ -991,6 +983,7 @@ textarea.form-control {
     outline: none;
     width: 100%;
     margin-bottom: 20px;
+    color: black;
 }
 div#small-dialog1,div#small-dialog2 {
     padding: 50px;
@@ -1004,7 +997,7 @@ form a {
     float: right;
     font-size: 13px;
 }
-#small-dialog1 input[type="submit"], #small-dialog1 input[type="submit"] {
+#small-dialog1 input[type="submit"], #small-dialog1 input[type="submit"], .btn_submit {
     background: Orange;
     border: none;
     padding: 10px 15px;
@@ -1057,8 +1050,9 @@ ul li input[type="checkbox"]:checked+label span:first-child:before {
     font-size: 30px;
     margin-bottom: 30px;
     text-align: center;
+  
 }
-#small-dialog input[type="text"], #small-dialog input[type="password"], #small-dialog2 input[type="text"], #small-dialog2 input[type="email"], #small-dialog2 input[type="password"] {
+#small-dialog input[type="text"], #small-dialog input[type="password"], #small-dialog2 input[type="text"], #small-dialog2 input[type="email"], #small-dialog2 input[type="password"], .btn_submit {
     padding: 12px;
     font-size: 14px;
     border: 2px solid Orange;
@@ -1066,8 +1060,10 @@ ul li input[type="checkbox"]:checked+label span:first-child:before {
     outline: none;
     width: 100%;
     margin-bottom: 20px;
+    color: black;
+ 
 }
-#small-dialog input[type="submit"], #small-dialog2 input[type="submit"] {
+#small-dialog input[type="submit"], #small-dialog2 input[type="submit"],.btn_submit {
     background: Orange;
     border: none;
     padding: 10px 15px;
@@ -1478,7 +1474,7 @@ ul li input[type="checkbox"]:checked+label span:first-child:before {
 }
 .w3ls-text p i {
     font-size: 1.5em;
-    color: #00a99d;
+    color:orange;
 }
 .w3ls-text a{
     color: #FFFFFF;
@@ -3011,7 +3007,7 @@ input, button, select, textarea {
 	div#small-dialog1, div#small-dialog2 {
 		padding: 25px;
 	}
-	#small-dialog1 input[type="text"], #small-dialog1 input[type="password"], #small-dialog1 input[type="text"], #small-dialog1 input[type="password"],#small-dialog2input[type="text"], #small-dialog2 input[type="password"], #small-dialog2 input[type="text"], #small-dialog2 input[type="password"] {
+	#small-dialog1 input[type="text"], #small-dialog1 input[type="password"], #small-dialog1 input[type="text"], #small-dialog1 input[type="password"],#small-dialog2 input[type="text"], #small-dialog2 input[type="password"], #small-dialog2 input[type="text"], #small-dialog2 input[type="password"], .btn_submit {
 		padding: 7px;
 		margin-bottom: 10px;
 	}
@@ -3079,5 +3075,15 @@ input, button, select, textarea {
 .dropdown-menu li a :hover{
     margin: 0px !important;
     padding: 0px !important;
+}
+.fa-3x{
+    color: white;
+}
+
+.btn_submit{
+    -webkit-appearance: button;
+    cursor: pointer;
+    align-items: flex-start;
+    text-align: center;
 }
 
